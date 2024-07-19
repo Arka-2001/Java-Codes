@@ -1,0 +1,27 @@
+1You have to encrypt a non-empty string phrase. The encryption adds a 'cyclic shift' to each letter where the value of this 'cyclic shift' is decided by the position of the letter from the end of its word. The shift value for each letter of a word is its index value (starting from 0) from the right-most character of the word.
+
+EXAMPLE: The shift values in 'yum feed' will be
+
+yum: m->0, u->1, y->2
+
+feed: d->0, e->1, e->2, f->3
+
+which gives the encryption avm igfd Here,
+
+adding the shift with value 0 to letter 'm' gives 'm' + 0 = m ;
+
+values 1 to 'u' gives 'u' + 1 = v and values 2 to 'y' gives 'y' + 2 = a and so on. Note that the shift wraps around on reaching the end of the alphabets, i.e., the shift values for 'y' as shown above is 'a'.
+
+
+
+INPUT:
+
+The input to the function/method consists of a string.
+
+OUTPUT:
+
+Return the encrypted string
+
+NOTE:
+
+Assume that the input string contains single space separating set of words
